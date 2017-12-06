@@ -1,0 +1,20 @@
+<h1 class="page-header" ng-bind-html="vm.pageTitle"></h1>
+
+
+<form class="form-horizontal">
+
+
+        <div class="alert alert-danger" ng-show="vm.showAlert">
+            <button type="button" class="close" ng-click="vm.hideAlert();">&times;</button>
+            <p ng-bind-html="vm.msgAlert"></p>
+        </div>
+
+
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="vm.action" placeholder="Action">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="vm.doAction()">Go!</button>
+            </span>
+        </div>
+
+</form>
